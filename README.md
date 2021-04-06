@@ -3,7 +3,9 @@ This app will represent serveices subscription integration APIs. please follow t
 1- On your server run a composer install command as below, then composer will recreate the vendor folder with all the packages that are used in
 #composer install
 
-2- note there is no .sql file uploaded with this project, due I used migration style, which it's will create the DB tables, just run the below gommand to migrate
+2- Creat the the database with mentioned DB name in .env file "laravel" 
+
+3- note there is no .sql file uploaded with this project, due I used migration style, which it's will create the DB tables, just run the below gommand to migrate
 # php artisan migrate
 
 

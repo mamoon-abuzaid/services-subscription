@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Subscription_log extends Model
+class SubscriptionLog extends Model
 {
     
-    protected $table = 'subscription_log';
+    protected $table = 'subscriptionLog';
     protected $fillable = ['userId','subscriptionId','msisdn','operatorId','action'];
-    //
+    
 }

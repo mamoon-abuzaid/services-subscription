@@ -14,23 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/user/subscribe','User@subscribe');
+//////////////////////// User APIs 
 Route::get('/user/subscribe','UserSubscribe@subscribe');
 Route::get('/user/unsubscribe','UserUnSubscribe@unsubscribe');
 
-//Route::get('/user/subscribe','StudentApiController@create');
-
-// Route::get('/user/unsubscribe', function (Request $request) {
-//     dd("route 3");
-// });
 //////////////////////// Server APIs 
-//Route::get('/server/subscribe', 'Server@validateSubRequest');
 Route::get('/server/subscribe', 'ServerSubscribe@validateSubRequest');
 Route::get('/server/unsubscribe', 'ServerUnSubscribe@validateUnSubRequest');
-// //Route::get('/server/unsubscribe', function (Request $request) {
-//     dd("4");
-
-
-
-//     return $request->user();
-// });

@@ -22,14 +22,11 @@ class ServerUnSubscribe extends Controller
             //////////// End Get payload and decoded
             //echo "ZZZOZOZOZOZOZO".$request->idd;
             if(substr($request->msisdn, 0, 7)=='2499123')
-            return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Successful Unsubscribed','status'=>'UNSUBSCRIBED','msisdn'=>$request->msisdn]);
-        else
-        return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Invalid MSISDN','status'=>'FAILED','msisdn'=>$request->msisdn]);
+                return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Successful Unsubscribed','status'=>'UNSUBSCRIBED','msisdn'=>$request->msisdn]);
+            else
+                return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Invalid MSISDN','status'=>'FAILED','msisdn'=>$request->msisdn]);
 
 
-
-    //    return $payload;
-   // print_r($payload);
                 
             }
 }

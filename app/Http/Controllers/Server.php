@@ -24,11 +24,8 @@ class Server extends Controller
         $userId=$json_data->userId;
         $subscriptionId=$json_data->subscriptionId;
         $userId=$json_data->userId;
-
-        echo "sdsd".$json_data->msisdn;
-
+        
         return $payload;
-   // print_r($payload);
         
     }
 }

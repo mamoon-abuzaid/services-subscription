@@ -13,7 +13,7 @@ class AddStatusToSubscriptionLogTable extends Migration
      */
     public function up()
     {
-        Schema::table('subscription_log', function (Blueprint $table) {
+        Schema::table('subscriptionLog', function (Blueprint $table) {
             //
             $table->string('status')->default('PENDING')->after('action');
 
@@ -27,7 +27,7 @@ class AddStatusToSubscriptionLogTable extends Migration
      */
     public function down()
     {
-        Schema::table('subscription_log', function (Blueprint $table) {
+        Schema::table('subscriptionLog', function (Blueprint $table) {
             //
             $table->dropColumn('status');
         });

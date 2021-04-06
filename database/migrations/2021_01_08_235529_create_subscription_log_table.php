@@ -13,7 +13,7 @@ class CreateSubscriptionLogTable extends Migration
      */
     public function up()
     {
-        Schema::create('subscription_log', function (Blueprint $table) {
+        Schema::create('subscriptionLog', function (Blueprint $table) {
             $table->id();
             $table->string('userId');
             $table->string('subscriptionId');
@@ -31,6 +31,6 @@ class CreateSubscriptionLogTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('subscription_log');
+        Schema::dropIfExists('subscriptionLog');
     }
 }

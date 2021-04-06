@@ -4,9 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class user_client extends Model
+class userClient extends Model
 {
-    protected $table='users_client';
+    protected $table='usersClient';
     protected $fillable = [
         'subscriptionId', 'msisdn', 'operatorId','status',
     ];

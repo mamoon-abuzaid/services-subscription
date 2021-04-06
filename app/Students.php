@@ -9,5 +9,5 @@ class Students extends Model
 
     protected $table = 'students';
     protected $fillable = ['fname','lname','age',''];
-    //
+    
 }

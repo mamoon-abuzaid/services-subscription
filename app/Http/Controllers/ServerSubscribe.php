@@ -22,13 +22,10 @@ class ServerSubscribe extends Controller
             //////////// End Get payload and decoded
                 if(substr($request->msisdn, 0, 7)=='2499123')
                     return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Successful Subscribed','status'=>'SUBSCRIBED','msisdn'=>$request->msisdn]);
-                else
+                else{
                 return response()->json(['subscriptionId'=>$request->subscriptionId,'msg'=>'Invalid MSISDN','status'=>'FAILED','msisdn'=>$request->msisdn]);
+                }
 
-
-        
-            //    return $payload;
-           // print_r($payload);
                 
             }
 }

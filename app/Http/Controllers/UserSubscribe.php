@@ -8,7 +8,7 @@ use Tymon\JWTAuth\Facades\JWTFactory;
 use Validator;
 use App\user_client;
 use App\Subscriber;
-use App\Subscription_log;
+use App\SubscriptionLog;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
@@ -41,7 +41,7 @@ class UserSubscribe extends Controller
                 $subscription->operatorId = $request->input ('operatorId');
                 $subscription->action = 'sub';
                 $query1=$subscription->save();
-            /////////////////////////////////////////////
+
             //////////////////////////////          
             /// create a pendding sub   //////////
             $query2 = Subscriber::create($request->all());
@@ -75,7 +75,7 @@ class UserSubscribe extends Controller
             ->where('msisdn', $response_data->msisdn)
             ->update(['status' => $response_data->status]);
 
-            $update_sub_log = DB::table('subscription_log')
+            $update_sub_log = DB::table('subscriptionLog')
             ->where('subscriptionId', $response_data->subscriptionId)
             ->where('msisdn', $response_data->msisdn)
             ->where('action', 'sub')
