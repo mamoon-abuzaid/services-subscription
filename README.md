@@ -1,4 +1,4 @@
-This project is a test and practices for CRUD laravel example that represents a simple telco service subscription model "APIs integration". 
+This project is a test and practices for CRUD laravel examples that represents a simple telco service subscription model "APIs integration". 
 
 please follow the below steps to run the project:
 
@@ -22,3 +22,6 @@ Now you are ready !!
  3- server subscribe (/api/server/subscribe)
  
  4- server unsbscribe (/api/server/unsubscribe)
+
+
+Note: this project for learning and practicing purpose.
