@@ -13,9 +13,12 @@ please follow the below steps to run the project:
 
 Now you are ready !!  
 
-- Notes:
  The project includes the below APIs: 
+ 
  1- user Subscribe  (/api/user/subscribe)
+ 
  2- user unsubscribe (/api/user/unsubscribe)
+ 
  3- server subscribe (/api/server/subscribe)
+ 
  4- server unsbscribe (/api/server/unsubscribe)
